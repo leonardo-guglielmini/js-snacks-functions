@@ -26,11 +26,15 @@ const findVowels = (word) =>{
     const vowels=["a","e","i","o","u"]
     let totalVowels = 0
     for(let i=0; i< word.length;i++){
+        if (vowels.includes(word[i])){
+            totalVowels++
+        }
+        /*
         for(let j=0; j<vowels.length;j++){
             if(vowels[j]===word[i]){
                 totalVowels++
             }
-        }
+        */
     }
     return totalVowels
 }
